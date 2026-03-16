@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int v, t;
+    const int km = 109;
+
+    cin >> v >> t;
+
+    int distance = (v * t) % km;
+
+    if (distance < 0) {
+        distance += km;
+    }
+    cout << distance << endl;
+
+    return 0;
+}
